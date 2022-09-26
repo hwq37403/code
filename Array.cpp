@@ -1,7 +1,11 @@
 #include <stdfix.h>
 #include <iostream>
 using namespace std;
-
+#include<stdio.h>
+#include<string.h>
+#define MAXSIZE 255
+#define OK 1
+#define ERROR 0
 
 
 class Array
@@ -16,6 +20,14 @@ public:
         int data; //数据域
         struct LNode *next; //指针域
         }LNode,*LinkList;
+    
+    typedef struct BinTreeNode{//定义线索二叉树结点类型
+        int data;//数据域
+        struct BinTreeNode *lchild,*rchild;
+        int ltag,rtag;
+
+    }BinTreeNode,*BinTreeList;
+
 
     //1.时间复杂度O(n) 因为L为引用，是直接对原链表进行操作的，故不会因此断链
     void Del_X_3(LinkList &L,int x){
@@ -186,5 +198,7 @@ public:
         return 1;//比较结束后返回1
     }
     //tips: 一定要写成q->next!=p,不然偶数个，最后两个点没有遍历就跳出循环了
+
+
 
 };
