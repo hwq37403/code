@@ -10,9 +10,11 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "cStandard": "c17",
+            "windowsSdkVersion": "10.0.18362.0",
+            "compilerPath": "G:\\mingw64x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\gcc.exe",
+            "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "intelliSenseMode": "gcc-x64"
         }
     ],
     "version": 4
